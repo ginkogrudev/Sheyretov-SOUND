@@ -42,3 +42,21 @@ function enableAnalytics() {
     // gtag('js', new Date());
     // gtag('config', 'G-XXXXXXXXXX');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Mobile Menu Toggle
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('mobile-menu');
+
+    if(btn && nav) {
+        btn.addEventListener('click', () => {
+            nav.classList.toggle('hidden');
+        });
+    }
+
+    // 2. Dynamic Year
+    const yearSpan = document.getElementById('year');
+    if(yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
