@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | Sheyretov SOUND</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { black: '#050505', purple: '#a855f7', cyan: '#22d3ee', dark: '#121212' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-brand-black text-white">
+
+    <nav class="p-6 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-display font-black">SHEYRETOV SOUND</a>
+            <a href="index.html" class="text-gray-400 hover:text-white">Назад към Начало</a>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <h1 class="text-4xl md:text-6xl font-display font-bold mb-8 text-center">Нашите Услуги</h1>
+        
+        <div class="mb-16 border-l-4 border-brand-purple pl-8">
+            <h2 class="text-3xl font-bold mb-4 text-white">1. Професионално Озвучаване</h2>
+            <p class="text-gray-300 text-lg mb-4">
+                Осигуряваме мащабни озвучителни системи за външни и вътрешни събития. Нашият инвентар включва:
+            </p>
+            <ul class="list-disc list-inside text-gray-400 space-y-2">
+                <li>Line Array системи за покритие на големи площи</li>
+                <li>Безжични микрофонни системи (Shure/Sennheiser)</li>
+                <li>Дигитални миксери за прецизен контрол</li>
+                <li>Мониторни системи за изпълнители</li>
+            </ul>
+        </div>
+
+        <div class="mb-16 border-l-4 border-brand-cyan pl-8">
+            <h2 class="text-3xl font-bold mb-4 text-white">2. Ефектно и Архитектурно Осветление</h2>
+            <p class="text-gray-300 text-lg mb-4">
+                Светлината създава атмосферата. Ние предлагаме:
+            </p>
+            <ul class="list-disc list-inside text-gray-400 space-y-2">
+                <li>Moving Heads (Beam, Spot, Wash)</li>
+                <li>Архитектурно осветление за сгради (Wall washers)</li>
+                <li>Ефекти (дим машини, хейзери)</li>
+                <li>DMX управление и програмиране на светлинни шоута</li>
+            </ul>
+        </div>
+
+        <div class="text-center mt-12 p-8 bg-brand-dark rounded-xl border border-white/10">
+            <h3 class="text-2xl font-bold mb-4">Имате специфични изисквания?</h3>
+            <p class="text-gray-400 mb-6">Свържете се с нас за индивидуална оферта спрямо вашия райдър.</p>
+            <a href="tel:0888502811" class="inline-block bg-brand-purple text-white font-bold py-3 px-8 rounded hover:bg-purple-600 transition-colors">
+                Свържи се с нас
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
