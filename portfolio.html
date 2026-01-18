@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="bg" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Sheyretov SOUND</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { black: '#050505', purple: '#a855f7', cyan: '#22d3ee', dark: '#121212' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-brand-black text-white antialiased">
+
+  <nav class="fixed w-full z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-display font-black tracking-wider text-white">
+                    SHEYRETOV <span class="text-brand-purple neon-text-purple">SOUND</span>
+                </a>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Начало</a>
+                        <a href="services.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Услуги</a>
+                        <a href="portfolio.html" class="text-white-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Портфолио</a>
+                        <a href="team.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Екип</a>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="tel:0888502811" class="bg-brand-purple hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-full shadow-lg shadow-purple-500/30">
+                        088 850 2811
+                    </a>
+                </div>
+
+                <button id="menu-btn" class="md:hidden text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-white/10 p-4">
+            <a href="index.html" class="block py-2 text-lg hover:text-brand-cyan">Начало</a>
+            <a href="services.html" class="block py-2 text-lg hover:text-brand-cyan">Услуги</a>
+            <a href="portfolio.html" class="block py-2 text-lg hover:text-brand-cyan">Портфолио</a>
+            <a href="team.html" class="block py-2 text-lg hover:text-brand-cyan">Екип</a>
+            <a href="#contact" class="block py-2 text-lg text-brand-cyan font-bold">Контакти</a>
+        </div>
+    </nav>
+
+    <div class="pt-32 pb-12 px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-display font-black text-white mb-4">Нашите Проекти</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">Моменти от сцената, уловени в кадър.</p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="group relative overflow-hidden rounded-xl h-80">
+                <img src="assets/Img/hero-crowd.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <h3 class="text-xl font-bold">Какво виждаме ние?</h3>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl h-80">
+                <img src="assets/Img/laureati-banner.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <h3 class="text-xl font-bold">Лауреати 2025</h3>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl h-80">
+                <img src="assets/Img/laureati-carpet.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <h3 class="text-xl font-bold">Вход за Лауреати 2025</h3>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl h-80 lg:col-span-2">
+                <img src="assets/Img/primfest-stage.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <h3 class="text-xl font-bold">PrimFest Главна Сцена 2025</h3>
+                </div>
+            </div>
+
+             <div class="group relative overflow-hidden rounded-xl h-80">
+                <img src="assets/Img/fakiq.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <h3 class="text-xl font-bold">Село Факия</h3>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl h-80">
+                <img src="assets/Img/virtus.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <h3 class="text-xl font-bold">Virtus</h3>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="mt-16 text-center">
+            <h3 class="text-2xl font-bold mb-6">Искате вашето събитие да изглежда така?</h3>
+            <a href="index.html#contact" class="bg-brand-purple text-white font-bold py-4 px-8 rounded-full hover:bg-purple-600 transition-colors">
+                Свържете се с нас
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-black border-t border-white/10 py-8 text-center text-gray-700 text-sm">
+        <p>&copy; 2026 Sheyretov SOUND.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bg" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екип | Sheyretov SOUND</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { black: '#050505', purple: '#a855f7', cyan: '#22d3ee', dark: '#121212' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-brand-black text-white antialiased">
+
+    <nav class="fixed w-full z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-display font-black tracking-wider text-white">
+                    SHEYRETOV <span class="text-brand-purple neon-text-purple">SOUND</span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Начало</a>
+                        <a href="services.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Услуги</a>
+                        <a href="portfolio.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Портфолио</a>
+                        <a href="team.html" class="text-white hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Екип</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="tel:0888502811" class="bg-brand-purple hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-full shadow-lg shadow-purple-500/30">
+                        088 850 2811
+                    </a>
+                </div>
+                <button id="menu-btn" class="md:hidden text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-white/10 p-4">
+            <a href="index.html" class="block py-2 text-lg">Начало</a>
+            <a href="services.html" class="block py-2 text-lg">Услуги</a>
+            <a href="portfolio.html" class="block py-2 text-lg">Портфолио</a>
+            <a href="team.html" class="block py-2 text-lg text-brand-cyan">Екип</a>
+        </div>
+    </nav>
+
+    <div class="pt-32 pb-12 px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-display font-black text-white mb-4">Хората зад пулта</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">Екипът, който гарантира вашия успех.</p>
+    </div>
+
+    <section class="py-12 bg-gradient-to-b from-brand-dark to-brand-black">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 flex flex-col md:flex-row items-center gap-10">
+                <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 relative">
+                    <div class="absolute inset-0 bg-brand-cyan blur-2xl opacity-20 rounded-full"></div>
+                    <img src="assets/Img/founder.jpg" alt="Димитър Шейретов" class="w-full h-full object-cover rounded-full border-4 border-brand-cyan shadow-xl relative z-10">
+                </div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-white mb-2">Димитър Шейретов</h2>
+                    <p class="text-brand-purple font-bold uppercase text-sm mb-6">Founder & Audio Engineer</p>
+                    <h4 class="text-xl font-bold text-brand-cyan mb-3">От пулта до площада</h4>
+                    <p class="text-gray-300 text-lg italic mb-8">
+                        "Започнах сам – само аз, слушалките и един смесителен пулт. Но бързо разбрах, че за да направя хората истински щастливи, музиката не е достатъчна – трябва и перфектен звук. Когато видя усмивките на хората пред сцената, знам, че всички безсънни нощи и тежка техника си струват."
+                    </p>
+                    <a href="https://www.facebook.com/dimitursheiretov96" target="_blank" class="inline-flex items-center text-white bg-[#1877F2] hover:bg-blue-700 px-6 py-3 rounded-lg font-bold transition-colors">
+                        <i class="fab fa-facebook mr-2"></i> Личен Профил
+                    </a>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+    <footer class="bg-black border-t border-white/10 py-8 text-center text-gray-700 text-sm mt-12">
+        <p>&copy; 2026 Sheyretov SOUND.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -9,9 +9,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        brand: { black: '#050505', purple: '#a855f7', cyan: '#22d3ee', dark: '#121212' }
-                    },
+                    colors: { brand: { black: '#050505', purple: '#a855f7', cyan: '#22d3ee', dark: '#121212' } },
                     fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Montserrat', 'sans-serif'] }
                 }
             }
@@ -19,50 +17,91 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-brand-black text-white">
 
-    <nav class="p-6 border-b border-white/10">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-xl font-display font-black">SHEYRETOV SOUND</a>
-            <a href="index.html" class="text-gray-400 hover:text-white">Назад към Начало</a>
+  <nav class="fixed w-full z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-display font-black tracking-wider text-white">
+                    SHEYRETOV <span class="text-brand-purple neon-text-purple">SOUND</span>
+                </a>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Начало</a>
+                        <a href="services.html" class="text-white-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Услуги</a>
+                        <a href="portfolio.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Портфолио</a>
+                        <a href="team.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Екип</a>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="tel:0888502811" class="bg-brand-purple hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-full shadow-lg shadow-purple-500/30">
+                        088 850 2811
+                    </a>
+                </div>
+
+                <button id="menu-btn" class="md:hidden text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-white/10 p-4">
+            <a href="index.html" class="block py-2 text-lg hover:text-brand-cyan">Начало</a>
+            <a href="services.html" class="block py-2 text-lg hover:text-brand-cyan">Услуги</a>
+            <a href="portfolio.html" class="block py-2 text-lg hover:text-brand-cyan">Портфолио</a>
+            <a href="team.html" class="block py-2 text-lg hover:text-brand-cyan">Екип</a>
+            <a href="#contact" class="block py-2 text-lg text-brand-cyan font-bold">Контакти</a>
         </div>
     </nav>
 
-    <div class="max-w-4xl mx-auto px-4 py-16">
-        <h1 class="text-4xl md:text-6xl font-display font-bold mb-8 text-center">Нашите Услуги</h1>
+    <div class="pt-32 pb-16 px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-display font-bold mb-4">Нашите Услуги</h1>
+        <p class="text-gray-400">Цялостно техническо обезпечаване</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 pb-24 space-y-24">
         
-        <div class="mb-16 border-l-4 border-brand-purple pl-8">
-            <h2 class="text-3xl font-bold mb-4 text-white">1. Професионално Озвучаване</h2>
-            <p class="text-gray-300 text-lg mb-4">
-                Осигуряваме мащабни озвучителни системи за външни и вътрешни събития. Нашият инвентар включва:
-            </p>
-            <ul class="list-disc list-inside text-gray-400 space-y-2">
-                <li>Line Array системи за покритие на големи площи</li>
-                <li>Безжични микрофонни системи (Shure/Sennheiser)</li>
-                <li>Дигитални миксери за прецизен контрол</li>
-                <li>Мониторни системи за изпълнители</li>
-            </ul>
+        <div class="flex flex-col md:flex-row gap-8 items-center border-b border-white/5 pb-12">
+            <div class="w-full md:w-1/2">
+                <div class="w-16 h-16 bg-brand-purple/20 rounded-xl flex items-center justify-center text-brand-purple text-3xl mb-6">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-4">Професионално Озвучаване</h2>
+                <ul class="space-y-3 text-gray-300">
+                    <li><i class="fas fa-check text-brand-cyan mr-2"></i> Line Array системи за мащабни събития</li>
+                    <li><i class="fas fa-check text-brand-cyan mr-2"></i> Дигитални миксери и стейдж боксове</li>
+                    <li><i class="fas fa-check text-brand-cyan mr-2"></i> Безжични микрофонни системи</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-2xl border border-white/10">
+                <img src="assets/Img/tech-setup.jpg" class="w-full">
+            </div>
         </div>
 
-        <div class="mb-16 border-l-4 border-brand-cyan pl-8">
-            <h2 class="text-3xl font-bold mb-4 text-white">2. Ефектно и Архитектурно Осветление</h2>
-            <p class="text-gray-300 text-lg mb-4">
-                Светлината създава атмосферата. Ние предлагаме:
-            </p>
-            <ul class="list-disc list-inside text-gray-400 space-y-2">
-                <li>Moving Heads (Beam, Spot, Wash)</li>
-                <li>Архитектурно осветление за сгради (Wall washers)</li>
-                <li>Ефекти (дим машини, хейзери)</li>
-                <li>DMX управление и програмиране на светлинни шоута</li>
-            </ul>
+        <div class="flex flex-col md:flex-row-reverse gap-8 items-center border-b border-white/5 pb-12">
+            <div class="w-full md:w-1/2">
+                <div class="w-16 h-16 bg-brand-cyan/20 rounded-xl flex items-center justify-center text-brand-cyan text-3xl mb-6">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-4">Сценично Осветление</h2>
+                <ul class="space-y-3 text-gray-300">
+                    <li><i class="fas fa-check text-brand-purple mr-2"></i> Moving Heads (Beam, Spot, Wash)</li>
+                    <li><i class="fas fa-check text-brand-purple mr-2"></i> Архитектурно осветление за сгради</li>
+                    <li><i class="fas fa-check text-brand-purple mr-2"></i> Дим машини и ефекти</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-2xl border border-white/10">
+                <img src="assets/Img/laureati-carpet.jpg" class="w-full">
+            </div>
         </div>
 
-        <div class="text-center mt-12 p-8 bg-brand-dark rounded-xl border border-white/10">
-            <h3 class="text-2xl font-bold mb-4">Имате специфични изисквания?</h3>
-            <p class="text-gray-400 mb-6">Свържете се с нас за индивидуална оферта спрямо вашия райдър.</p>
-            <a href="tel:0888502811" class="inline-block bg-brand-purple text-white font-bold py-3 px-8 rounded hover:bg-purple-600 transition-colors">
-                Свържи се с нас
+        <div class="text-center bg-brand-dark p-12 rounded-2xl border border-white/10">
+            <h3 class="text-2xl font-bold mb-4">Готови ли сте за шоу?</h3>
+            <p class="text-gray-400 mb-8">Свържете се с нас за безплатна консултация и оферта.</p>
+            <a href="index.html#contact" class="inline-block bg-white text-black font-bold py-3 px-8 rounded hover:bg-gray-200 transition-colors">
+                Контакти
             </a>
         </div>
     </div>
