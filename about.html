@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="bg" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>За Нас | Sheyretov SOUND</title>
+    
+    <link rel="icon" type="image/png" href="assets/Img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/Img/favicon.png">
+
+    <meta property="og:title" content="Екипът на Sheyretov SOUND">
+    <meta property="og:description" content="Хората зад пулта, прожекторите и обектива.">
+    <meta property="og:image" content="assets/Img/hero-crowd.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { black: '#050505', purple: '#a855f7', cyan: '#22d3ee', dark: '#121212' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-brand-black text-white antialiased">
+
+    <nav class="fixed w-full z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-display font-black tracking-wider text-white">
+                    SHEYRETOV <span class="text-brand-purple neon-text-purple">SOUND</span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Начало</a>
+                        <a href="services.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Услуги</a>
+                        <a href="portfolio.html" class="text-gray-300 hover:text-brand-cyan transition-colors px-3 py-2 font-medium">Портфолио</a>
+                        <a href="about.html" class="text-white hover:text-brand-cyan transition-colors px-3 py-2 font-medium">За Нас</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="tel:0888502811" class="bg-brand-purple hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-full shadow-lg shadow-purple-500/30">
+                        <i class="fas fa-phone-alt mr-2"></i> 088 850 2811
+                    </a>
+                </div>
+                <button id="menu-btn" class="md:hidden text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-white/10 p-4">
+            <a href="index.html" class="block py-2 text-lg hover:text-brand-cyan">Начало</a>
+            <a href="services.html" class="block py-2 text-lg hover:text-brand-cyan">Услуги</a>
+            <a href="portfolio.html" class="block py-2 text-lg hover:text-brand-cyan">Портфолио</a>
+            <a href="about.html" class="block py-2 text-lg hover:text-brand-cyan">За Нас</a>
+        </div>
+    </nav>
+
+    <div class="pt-32 pb-12 px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-display font-black text-white mb-4">Историята зад звука</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">От един пулт до най-големите сцени в България.</p>
+    </div>
+
+    <section class="py-12">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-brand-dark rounded-3xl p-8 md:p-12 border border-white/10">
+                <h3 class="text-2xl font-bold text-brand-cyan mb-6">"Емоцията е моето гориво"</h3>
+                <div class="text-gray-300 space-y-6 text-lg leading-relaxed">
+                    <p>
+                        "Започнах с един микрофон, слушалки и огромно желание да звуча различно. С времето разбрах, че доброто озвучаване не е просто глас – то е емоция, ритъм и доверие."
+                    </p>
+                    <p>
+                        "Всеки проект за мен е история, която трябва да бъде усетена, не просто чута. Когато клиентът каже „точно това търсих“, знам, че съм си свършил работата."
+                    </p>
+                    <div class="flex items-center gap-4 mt-8 pt-8 border-t border-white/5">
+                        <img src="assets/Img/founder.jpg" class="w-16 h-16 rounded-full object-cover border-2 border-brand-purple">
+                        <div>
+                            <span class="block text-white font-bold">Димитър Шейретов</span>
+                            <span class="text-sm text-gray-500 uppercase">Основател</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-brand-black">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center md:text-left border-l-4 border-brand-purple pl-4">Основен Екип</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="group bg-white/5 rounded-xl p-6 border border-white/5 hover:border-brand-purple/50 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6 aspect-square">
+                        <img src="assets/Img/plamena.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute top-2 right-2 bg-black/70 backdrop-blur px-3 py-1 rounded-full">
+                            <i class="fas fa-camera text-brand-cyan"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Пламена Георгиева</h3>
+                    <p class="text-brand-purple text-sm font-bold uppercase mb-4 tracking-wider">Event Photographer</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        "Улавя емоцията, която звукът създава. Нейните кадри остават дълго след като музиката спре и прожекторите угаснат."
+                    </p>
+                </div>
+
+                <div class="group bg-white/5 rounded-xl p-6 border border-white/5 hover:border-brand-purple/50 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6 aspect-square">
+                        <img src="assets/Img/angel.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute top-2 right-2 bg-black/70 backdrop-blur px-3 py-1 rounded-full">
+                            <i class="fas fa-music text-brand-cyan"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Ангел Гундеров</h3>
+                    <p class="text-brand-cyan text-sm font-bold uppercase mb-4 tracking-wider">DJ & Audio Engineer</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        "Технически прецизен и музикално подготвен. Той гарантира, че партито не само се чува силно, но и звучи кристално чисто."
+                    </p>
+                </div>
+
+                <div class="group bg-white/5 rounded-xl p-6 border border-white/5 hover:border-brand-purple/50 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6 aspect-square">
+                        <img src="assets/Img/stoyan.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute top-2 right-2 bg-black/70 backdrop-blur px-3 py-1 rounded-full">
+                            <i class="fas fa-headphones text-brand-cyan"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Стоян Митрев</h3>
+                    <p class="text-brand-purple text-sm font-bold uppercase mb-4 tracking-wider">Professional DJ</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        "Майстор зад пулта. Човекът, който чете тълпата и знае точно коя песен ще взриви дансинга в правилния момент."
+                    </p>
+                </div>
+
+                 <div class="group bg-white/5 rounded-xl p-6 border border-white/5 hover:border-brand-purple/50 transition-all duration-300 lg:col-span-3 lg:w-1/3 lg:mx-auto">
+                    <div class="relative overflow-hidden rounded-lg mb-6 aspect-square">
+                        <img src="assets/Img/georgi.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute top-2 right-2 bg-black/70 backdrop-blur px-3 py-1 rounded-full">
+                            <i class="fas fa-lightbulb text-brand-cyan"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Георги Ценев</h3>
+                    <p class="text-brand-cyan text-sm font-bold uppercase mb-4 tracking-wider">Light Operator</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        "Влага цвят в ритъма. Неговото осветление превръща обикновена зала в истински спектакъл и допълва всяка нота със светлина."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-black border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16 text-center md:text-left border-b border-white/10 pb-12">
+                
+                <div class="md:col-span-1">
+                    <span class="text-2xl font-display font-black text-white">SHEYRETOV <span class="text-brand-purple">SOUND</span></span>
+                    <p class="text-gray-500 mt-4 text-sm leading-relaxed">
+                        Професионален звук, светлина и сценични конструкции за събития в цяла България.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Бързи Връзки</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-brand-cyan transition-colors">Начало</a></li>
+                        <li><a href="services.html" class="hover:text-brand-cyan transition-colors">Услуги & Техника</a></li>
+                        <li><a href="portfolio.html" class="hover:text-brand-cyan transition-colors">Портфолио</a></li>
+                        <li><a href="about.html" class="hover:text-brand-cyan transition-colors">За Екипа</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Контакти</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="tel:0888502811" class="text-white hover:text-brand-cyan font-bold text-lg block">
+                                088 850 2811
+                            </a>
+                        </li>
+                        <li>
+                            <a href="viber://chat?number=%2B359888502811" class="inline-flex items-center gap-2 text-[#7360f2] hover:text-white transition-colors font-medium">
+                                <i class="fab fa-viber text-xl"></i> Пиши ни във Viber
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:dimitur_sheiretov@abv.bg" class="text-gray-400 hover:text-white text-sm">
+                                dimitur_sheiretov@abv.bg
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61586241958048" target="_blank" class="text-brand-cyan hover:text-white transition-colors text-sm">
+                                <i class="fab fa-facebook text-lg mr-1"></i> Facebook Страница
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center md:items-end justify-start">
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider md:text-right">Готови ли сте?</h4>
+                    <a href="tel:0888502811" class="bg-brand-cyan text-black font-bold py-4 px-8 rounded hover:bg-cyan-400 transition-colors shadow-lg shadow-cyan-500/20 w-full md:w-auto text-center">
+                        ОБАДИ СЕ СЕГА
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+                <div class="text-gray-700">
+                    <p>&copy; <span id="year"></span> Sheyretov SOUND.</p>
+                </div>
+                <div>
+                    <a href="https://ginkogrudev.com" target="_blank" class="group relative inline-flex items-center gap-3 bg-gray-900 border border-white/10 px-6 py-3 rounded-full hover:border-white/30 transition-all duration-300">
+                        <span class="text-gray-400 group-hover:text-white transition-colors font-medium">
+                            Искаш такъв Уебсайт?
+                        </span>
+                        <span class="bg-gradient-to-r from-pink-500 to-blue-500 text-white font-bold px-3 py-1 rounded-full text-xs shadow-lg shadow-pink-500/20 group-hover:shadow-blue-500/40 transition-all">
+                            GG Solutions
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-[#121212] border-t border-brand-cyan/30 p-4 z-[60] transform translate-y-full transition-transform duration-500 shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3 text-center sm:text-left">
+                <i class="fas fa-cookie-bite text-brand-purple text-2xl hidden sm:block"></i>
+                <p class="text-gray-300 text-sm">
+                    Използваме бисквитки, за да анализираме трафика и да подобрим вашето преживяване.
+                </p>
+            </div>
+            <div class="flex gap-4">
+                <button id="accept-cookies" class="bg-brand-cyan text-black px-8 py-2 rounded font-bold hover:bg-cyan-300 transition-colors shadow-lg shadow-cyan-500/20 tracking-wider">
+                    ПРИЕМАМ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
