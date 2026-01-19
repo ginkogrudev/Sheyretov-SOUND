@@ -85,3 +85,20 @@ h1, h2, h3, h4 {
 #cookie-banner.visible {
     transform: translateY(0);
 }
+
+/* --- INFINITE SCROLL ANIMATION --- */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+    animation: scroll 30s linear infinite;
+    /* Ensure the track is wide enough */
+    width: max-content; 
+}
+
+/* Pause the scrolling when the user hovers over it */
+.pause-on-hover:hover .animate-scroll {
+    animation-play-state: paused;
+}
