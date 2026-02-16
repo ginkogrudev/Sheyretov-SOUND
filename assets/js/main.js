@@ -58,6 +58,49 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// --- SPHERE CTA ANIMATION (Index Page) ---
+document.addEventListener('DOMContentLoaded', () => {
+    const ctaContainer = document.getElementById('sphere-cta-container');
+    const sphereBg = document.getElementById('sphere-bg');
+    const sphereContent = document.getElementById('sphere-content');
+
+    if (ctaContainer && sphereBg && sphereContent) {
+        window.addEventListener('scroll', () => {
+            const rect = ctaContainer.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Check if the container's top has hit the top of the viewport
+            if (rect.top <= 0 && rect.bottom >= windowHeight) {
+                // Calculate scroll percentage (0.0 to 1.0) inside the container
+                const scrolledInContainer = -rect.top;
+                const totalScrollableDistance = rect.height - windowHeight;
+                const scrollPercent = scrolledInContainer / totalScrollableDistance;
+
+                // Scale the sphere (max scale 100x covers the whole screen)
+                const scaleValue = 1 + (scrollPercent * 100);
+                sphereBg.style.transform = `translate(-50%, -50%) scale(${scaleValue})`;
+
+                // Fade in text when sphere covers the background (at ~30% scroll)
+                if (scrollPercent > 0.3) {
+                    sphereContent.style.opacity = '1';
+                } else {
+                    sphereContent.style.opacity = '0';
+                }
+            } 
+            // Reset if scrolled back up above the section
+            else if (rect.top > 0) {
+                sphereBg.style.transform = 'translate(-50%, -50%) scale(1)';
+                sphereContent.style.opacity = '0';
+            } 
+            // Lock fully open if scrolled past it into the footer
+            else if (rect.bottom < windowHeight) {
+                sphereBg.style.transform = 'translate(-50%, -50%) scale(100)';
+                sphereContent.style.opacity = '1';
+            }
+        });
+    }
+});
+
 // --- HELPER: Dynamically Inject Google Analytics ---
 function loadGoogleAnalytics() {
     console.log("🚀 Analytics Enabled: Tracking Started");

@@ -102,3 +102,26 @@ h1, h2, h3, h4 {
 .pause-on-hover:hover .animate-scroll {
     animation-play-state: paused;
 }
+
+/* --- EVENTS PAGE STYLES --- */
+
+/* Ensure card contents stretch evenly */
+.event-card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Line clamp for descriptions to keep cards uniform height */
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Adjust date badge position on mobile if needed */
+@media (max-width: 640px) {
+    .event-card .absolute.top-0.left-8 {
+        left: 1.5rem; /* Slightly smaller offset on small screens */
+    }
+}
