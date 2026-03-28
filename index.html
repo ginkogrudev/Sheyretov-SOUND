@@ -346,40 +346,68 @@
         </div>
     </section>
 
-    <section id="team" class="py-24 bg-gradient-to-b from-brand-dark to-brand-black">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 flex flex-col md:flex-row items-center gap-10">
-            <div class="w-64 h-96 flex-shrink-0 relative group">
-    
-    <div class="absolute inset-0 bg-brand-cyan blur-2xl opacity-20 rounded-2xl group-hover:opacity-40 transition-opacity duration-500"></div>
-    
-    <img src="assets/Img/founderdimitursheyretov.jpg" 
-         alt="Димитър Шейретов" 
-         class="w-full h-full object-cover object-top rounded-2xl border-2 border-brand-cyan/50 shadow-2xl relative z-10">
-</div>
-               <div class="text-center md:text-left">
-                    <h2 class="text-3xl font-bold text-white mb-2">Димитър Шейретов</h2>
-                    <p class="text-brand-purple font-bold uppercase text-sm mb-6">Founder & Audio Engineer</p>
-                    
-                    <h4 class="text-xl font-bold text-brand-cyan mb-3">От пулта до площада</h4>
-                    
-                    <p class="text-gray-300 text-lg italic mb-8 leading-relaxed">
-                        "Здравейте, аз съм Димитър Шейретов. Вече над 13 години се занимавам с професионален звук, осветление и цялостно техническо обезпечаване на събития. За мен тази работа не е просто бизнес – тя е огромна отговорност и основен приоритет.<br>
-С времето изградихме силен екип от професионалисти, който смело застава зад всеки един проект. Продължаваме да се развиваме и да привличаме нови кадри, защото знаем колко важна е безкомпромисната подготовка за вашия специален ден."
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        
-                        <a href="https://www.facebook.com/profile.php?id=61586241958048" target="_blank" class="inline-flex items-center justify-center text-white bg-[#1877F2] hover:bg-blue-700 px-6 py-3 rounded-lg font-bold transition-colors">
-                            <i class="fab fa-facebook mr-2"></i> Личен Профил
-                        </a>
+    <section id="team" class="py-24 bg-gradient-to-b from-brand-dark to-brand-black relative overflow-hidden">
+        
+        <div class="absolute inset-0 pointer-events-none z-0">
+            <div class="absolute -top-40 -left-40 w-[600px] h-[600px] bg-brand-cyan/10 blur-[150px] rounded-full"></div>
+            <div class="absolute bottom-0 -right-40 w-[600px] h-[600px] bg-brand-purple/10 blur-[150px] rounded-full"></div>
+        </div>
 
-                        <a href="about.html" class="inline-flex items-center justify-center text-white bg-brand-purple hover:bg-purple-600 px-6 py-3 rounded-lg font-bold transition-colors shadow-lg shadow-purple-500/20">
-                            <i class="fas fa-users mr-2"></i> Виж целия колектив
-                        </a>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            
+            <div class="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 backdrop-blur-sm">
+                
+                <div class="w-full md:w-3/5 flex-shrink-0 relative group">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-purple to-brand-cyan blur opacity-30 group-hover:opacity-60 transition-opacity duration-700 rounded-2xl"></div>
+                    
+                    <div class="relative rounded-2xl overflow-hidden border-2 border-white/10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] aspect-[4/3]">
+                        <img src="assets/Img/founderdimitursheyretov.jpg" 
+                             alt="Димитър Шейретов Звукорежисьор и Основател" 
+                             class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105">
                         
+                        <div class="absolute bottom-6 left-6 bg-black/80 backdrop-blur-md px-4 py-2 rounded-lg border border-white/10 flex items-center gap-3">
+                            <span class="relative flex h-3 w-3">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-cyan opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-cyan"></span>
+                            </span>
+                            <span class="text-white text-sm font-bold tracking-wider uppercase">Audio Engineer</span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="w-full md:w-2/5 text-center md:text-left flex flex-col items-center md:items-start">
+                    
+                    <div class="mb-8">
+                        <span class="text-brand-cyan font-bold tracking-widest uppercase text-sm mb-3 block">За Основателя</span>
+                        <h2 class="text-3xl md:text-5xl font-display font-black text-white mb-3 uppercase tracking-wider relative inline-block">
+                            Димитър <br class="hidden lg:block">Шейретов
+                            <i class="fas fa-quote-right absolute top-0 -right-10 text-brand-purple text-5xl opacity-30 hidden md:block"></i>
+                        </h2>
+                        <p class="text-gray-500 font-black uppercase text-xs tracking-[0.2em]">Founder, Sheyretov Sound</p>
+                    </div>
+
+                    <h4 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-blue-500 mb-6 font-display uppercase tracking-widest border-l-2 border-brand-cyan pl-4">Над 13 години <br>безкомпромисен опит</h4>
+                    
+                    <div class="text-gray-400 space-y-5 text-base leading-relaxed mb-12 italic border-l border-white/10 pl-5">
+                        <p>
+                            "За мен звукът и осветлението не са просто бизнес, те са огромна отговорност и основен приоритет. Всяко събитие изисква перфектна техническа подготовка, за да бъде незабравимо."
+                        </p>
+                        <p>
+                            "С времето изградихме екип от доказани професионалисти, който смело стои зад най-мащабните проекти в Югоизточна България."
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 w-full">
+                        <a href="about.html" class="inline-flex items-center justify-center gap-3 w-full px-8 py-3 bg-brand-purple hover:bg-purple-600 text-white font-bold uppercase tracking-widest text-xs rounded-full hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition-all group">
+                            <i class="fas fa-users group-hover:rotate-12 transition-transform"></i> Виж целия екип
+                        </a>
+                        <a href="portfolio.html" class="inline-flex items-center justify-center gap-3 w-full px-8 py-3 bg-white/5 border border-white/10 text-white font-bold uppercase tracking-widest text-xs rounded-full hover:bg-white/10 transition-colors">
+                            <i class="fas fa-camera">
+                            </i> Портфолио
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
