@@ -114,7 +114,7 @@
                 <div class="relative order-2 lg:order-1">
                     <div class="absolute inset-0 border-2 border-brand-purple/20 rounded-2xl -translate-x-4 translate-y-4"></div>
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
-                        <img src="assets/Img/django-beach-bar-plaj-pontona-carevo-scena-sheyretov-sound-scena.jfif"
+                        <img src="assets/Img/gumeni-glavi-beach-party-2026-scena-zalez.avif"
                              alt="Бийч парти с Гумени Глави – сцена и публика на плажа по залез, озвучаване от Sheyretov SOUND"
                              loading="lazy" width="1600" height="1200"
                              class="w-full h-full object-cover">
@@ -128,12 +128,12 @@
                     </div>
                     <div class="grid grid-cols-2 gap-4 mt-4">
                         <div class="rounded-xl overflow-hidden aspect-video">
-                            <img src="assets/Img/django-beach-bar-plaj-pontona-carevo-scena-sheyretov-sound-dj.jfif"
+                            <img src="assets/Img/gumeni-glavi-beach-party-2026-grupa-na-scena.avif"
                                  alt="Група Гумени Глави на живо на сцената на плажа"
                                  loading="lazy" width="1600" height="1200" class="w-full h-full object-cover">
                         </div>
                         <div class="rounded-xl overflow-hidden aspect-video">
-                            <img src="assets/Img/django-beach-bar-plaj-pontona-carevo-scena-sheyretov-sound-2.jfif"
+                            <img src="assets/Img/gumeni-glavi-beach-party-2026-publika-noshtem.avif"
                                  alt="Публика танцува нощем на бийч партито"
                                  loading="lazy" width="1600" height="1200" class="w-full h-full object-cover">
                         </div>
@@ -561,6 +561,107 @@
     </section>
 
    
+    <!-- ФОРМА ЗА ЗАПИТВАНЕ (Web3Forms)
+         TODO: Вземи безплатен Access Key от https://web3forms.com (въвеждаш имейла си,
+         ключът пристига веднага) и замени "77fdaf30-9a0e-4dc9-959a-e83d0d91527f" по-долу. -->
+    <section id="zapitvane" class="py-24 bg-brand-dark border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-brand-cyan/5 blur-[150px] rounded-full pointer-events-none"></div>
+        <div class="max-w-3xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-brand-cyan font-bold tracking-widest uppercase text-sm mb-2 block">Свържи се с нас</span>
+                <h2 class="text-3xl md:text-5xl font-display font-black text-white uppercase">Изпрати запитване</h2>
+                <p class="text-gray-400 mt-4 text-lg">Кажи ни какво планираш – отговаряме до няколко часа.</p>
+            </div>
+
+            <form id="booking-form" action="https://api.web3forms.com/submit" method="POST"
+                  class="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 space-y-6 backdrop-blur-sm">
+
+                <input type="hidden" name="access_key" value="77fdaf30-9a0e-4dc9-959a-e83d0d91527f">
+                <input type="hidden" name="subject" value="Ново запитване от sheyretovsound.com">
+                <input type="hidden" name="from_name" value="Sheyretov SOUND – Уебсайт">
+                <!-- Honeypot против спам ботове -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="f-name" class="block text-sm font-bold text-gray-300 mb-2 uppercase tracking-wider">Име *</label>
+                        <input type="text" id="f-name" name="name" required autocomplete="name"
+                               class="w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan transition-colors"
+                               placeholder="Твоето име">
+                    </div>
+                    <div>
+                        <label for="f-phone" class="block text-sm font-bold text-gray-300 mb-2 uppercase tracking-wider">Телефон *</label>
+                        <input type="tel" id="f-phone" name="phone" required autocomplete="tel"
+                               class="w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan transition-colors"
+                               placeholder="08X XXX XXXX">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="f-type" class="block text-sm font-bold text-gray-300 mb-2 uppercase tracking-wider">Тип събитие</label>
+                        <select id="f-type" name="event_type"
+                                class="w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-white focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan transition-colors appearance-none">
+                            <option value="Бийч парти / Концерт">Бийч парти / Концерт</option>
+                            <option value="Сватба">Сватба</option>
+                            <option value="Фирмено събитие">Фирмено събитие</option>
+                            <option value="Фестивал / Общинско">Фестивал / Общинско събитие</option>
+                            <option value="Рентал на техника">Рентал на техника (B2B)</option>
+                            <option value="Друго">Друго</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="f-date" class="block text-sm font-bold text-gray-300 mb-2 uppercase tracking-wider">Дата на събитието</label>
+                        <input type="date" id="f-date" name="event_date"
+                               class="w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-white focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan transition-colors [color-scheme:dark]">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="f-msg" class="block text-sm font-bold text-gray-300 mb-2 uppercase tracking-wider">Съобщение</label>
+                    <textarea id="f-msg" name="message" rows="4"
+                              class="w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan transition-colors resize-none"
+                              placeholder="Локация, брой гости, какво ти трябва..."></textarea>
+                </div>
+
+                <button type="submit" id="form-submit-btn"
+                        class="w-full bg-brand-purple hover:bg-purple-600 text-white font-black uppercase tracking-widest py-4 px-8 rounded-full text-lg transition-all shadow-xl shadow-purple-900/40 hover:-translate-y-0.5">
+                    <i class="fas fa-paper-plane mr-2"></i> Изпрати запитване
+                </button>
+
+                <p id="form-status" class="hidden text-center font-bold rounded-lg py-3"></p>
+
+                <p class="text-gray-600 text-xs text-center">Или директно: <a href="tel:0888502811" class="text-brand-cyan hover:text-white">088 850 2811</a> · <a href="viber://chat?number=%2B359888502811" class="text-[#7360f2] hover:text-white">Viber</a></p>
+            </form>
+        </div>
+    </section>
+
+    <script>
+    // Изпращане без презареждане на страницата (fallback: нормален POST, ако JS е изключен)
+    document.getElementById('booking-form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const form = this, btn = document.getElementById('form-submit-btn'), status = document.getElementById('form-status');
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-circle-notch fa-spin mr-2"></i> Изпращане...';
+        try {
+            const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+            const data = await res.json();
+            status.classList.remove('hidden');
+            if (data.success) {
+                status.className = 'text-center font-bold rounded-lg py-3 bg-green-500/10 text-green-400 border border-green-500/30';
+                status.textContent = '✔ Запитването е изпратено! Ще се свържем с теб скоро.';
+                form.reset();
+            } else { throw new Error(); }
+        } catch {
+            status.classList.remove('hidden');
+            status.className = 'text-center font-bold rounded-lg py-3 bg-red-500/10 text-red-400 border border-red-500/30';
+            status.innerHTML = 'Нещо се обърка – обади ни се на <a href="tel:0888502811" class="underline">088 850 2811</a>.';
+        }
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Изпрати запитване';
+    });
+    </script>
+
     <footer id="contact" class="bg-black border-t border-white/10 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4">
             
